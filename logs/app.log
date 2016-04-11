@@ -1,0 +1,3 @@
+17:24:47.478 [localhost-startStop-1] DEBUG com.mawujun.controller.spring.SpringContextHolder - 注入ApplicationContext到SpringContextHolder:null
+17:28:26.254 [localhost-startStop-1] DEBUG com.mawujun.controller.spring.SpringContextHolder - 注入ApplicationContext到SpringContextHolder:null
+17:29:56.824 [localhost-startStop-1] DEBUG com.mawujun.controller.spring.SpringContextHolder - 注入ApplicationContext到SpringContextHolder:null
