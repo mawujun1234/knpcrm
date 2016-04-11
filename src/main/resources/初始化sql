@@ -1,3 +1,6 @@
+UPDATE user SET authentication_string= PASSWORD('Mawujun.1234') WHERE user = 'root';
+
+
 insert into T_ORG (ORGNO, CHANCL, ORGNM, ORGSN, ORGST, ORGTY)
 values ('root', 'OTH', '雅戈尔', '雅戈尔', 'KQ', 'OTH');
 insert into t_user (ID, LOGINNAME, NAME, PWD, REMARK)
