@@ -20,6 +20,7 @@ import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -136,6 +137,12 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 
         return simpleMappingExceptionResolver;  
     }  
+	@Bean
+	public CommonsMultipartResolver multipartResolver(){
+		CommonsMultipartResolver commonsMultipartResolver=new CommonsMultipartResolver();
+		commonsMultipartResolver.setMaxUploadSize(204800);
+		return commonsMultipartResolver;
+	}
 
 	@Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
