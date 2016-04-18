@@ -22,8 +22,7 @@ public class GeneratorCode {
 		aa.extjs_treeForm_model=false;
 		aa.extjs_packagePrefix="y";
 		aa.extjs_form_layoutColumns=-1;
-		
-		aa.extjs_grid_store_userModel=true;
+
 		aa.extjs_grid_createDelUpd_button=true;
 		aa.extjs_grid_enable_cellEditing=false;
 		generatorService.setExtenConfig(aa);
