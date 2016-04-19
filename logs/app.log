@@ -345,3 +345,214 @@
 09:40:21.102 [localhost-startStop-1] DEBUG com.mawujun.controller.spring.SpringContextHolder - ע��ApplicationContext��SpringContextHolder:null
 10:13:14.280 [localhost-startStop-1] DEBUG com.mawujun.config.DispatcherServletInitializer - No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
 10:13:51.067 [localhost-startStop-1] DEBUG com.mawujun.controller.spring.SpringContextHolder - ע��ApplicationContext��SpringContextHolder:null
+21:30:27.631 [localhost-startStop-1] DEBUG com.mawujun.config.DispatcherServletInitializer - No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
+21:30:34.913 [localhost-startStop-1] DEBUG com.mawujun.controller.spring.SpringContextHolder - 注入ApplicationContext到SpringContextHolder:null
+21:30:34.942 [localhost-startStop-1] DEBUG com.mawujun.controller.spring.SpringContextHolder - 清除SpringContextHolder中的ApplicationContext:WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Apr 19 21:30:27 CST 2016]; root of context hierarchy
+21:45:47.932 [localhost-startStop-1] DEBUG com.mawujun.config.DispatcherServletInitializer - No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
+21:45:53.740 [localhost-startStop-1] DEBUG com.mawujun.controller.spring.SpringContextHolder - 注入ApplicationContext到SpringContextHolder:null
+22:07:23.308 [http-bio-8087-exec-6] DEBUG com.mawujun.permission.UserRepository.getByLoginName - ==>  Preparing: select * from t_user a where a.loginName=? 
+22:07:23.328 [http-bio-8087-exec-6] DEBUG com.mawujun.permission.UserRepository.getByLoginName - ==> Parameters: admin(String)
+22:07:23.346 [http-bio-8087-exec-6] DEBUG com.mawujun.permission.UserRepository.getByLoginName - <==      Total: 0
+22:09:50.930 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.UserRepository.getByLoginName - ==>  Preparing: select * from t_user a where a.loginName=? 
+22:09:50.930 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.UserRepository.getByLoginName - ==> Parameters: admin(String)
+22:09:50.936 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.UserRepository.getByLoginName - <==      Total: 1
+22:09:50.946 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==>  Preparing: select c.url from t_role_user a,t_role_menu b,t_menu c where a.role_id=b.role_id and b.menu_id=c.id and a.user_id=? 
+22:09:50.946 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==> Parameters: admin(String)
+22:09:50.951 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.UserRepository.findPermissions - <==      Total: 3
+22:09:50.968 [http-bio-8087-exec-9] INFO  com.mawujun.controller.shiro.ShiroURLPermissionsFilter - 当前路径/main/index.jsp匹配 '/main/**'. 所以不进行权限验证
+22:09:51.642 [http-bio-8087-exec-10] INFO  com.mawujun.controller.shiro.ShiroURLPermissionsFilter - 当前路径/main/unauthorized.jsp匹配 '/main/**'. 所以不进行权限验证
+22:10:47.316 [http-bio-8087-exec-14] INFO  com.mawujun.controller.shiro.ShiroURLPermissionsFilter - 当前路径/main/index.jsp匹配 '/main/**'. 所以不进行权限验证
+22:10:47.867 [http-bio-8087-exec-10] INFO  com.mawujun.controller.shiro.ShiroURLPermissionsFilter - 当前路径/main/unauthorized.jsp匹配 '/main/**'. 所以不进行权限验证
+22:11:09.153 [http-bio-8087-exec-14] INFO  com.mawujun.controller.shiro.ShiroURLPermissionsFilter - 当前路径/main/index.jsp匹配 '/main/**'. 所以不进行权限验证
+22:11:14.015 [http-bio-8087-exec-14] INFO  com.mawujun.controller.shiro.ShiroURLPermissionsFilter - 当前路径/main/unauthorized.jsp匹配 '/main/**'. 所以不进行权限验证
+22:12:41.355 [http-bio-8087-exec-14] INFO  com.mawujun.controller.shiro.ShiroURLPermissionsFilter - 当前路径/main/index.jsp匹配 '/main/**'. 所以不进行权限验证
+22:12:45.888 [http-bio-8087-exec-14] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==>  Preparing: select c.url from t_role_user a,t_role_menu b,t_menu c where a.role_id=b.role_id and b.menu_id=c.id and a.user_id=? 
+22:12:45.888 [http-bio-8087-exec-14] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==> Parameters: admin(String)
+22:12:45.889 [http-bio-8087-exec-14] DEBUG com.mawujun.permission.UserRepository.findPermissions - <==      Total: 3
+22:12:45.905 [http-bio-8087-exec-10] INFO  com.mawujun.controller.shiro.ShiroURLPermissionsFilter - 当前路径/main/unauthorized.jsp匹配 '/main/**'. 所以不进行权限验证
+22:19:16.888 [localhost-startStop-2] DEBUG com.mawujun.controller.spring.SpringContextHolder - 清除SpringContextHolder中的ApplicationContext:WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Apr 19 21:45:48 CST 2016]; root of context hierarchy
+22:19:34.211 [localhost-startStop-1] DEBUG com.mawujun.config.DispatcherServletInitializer - No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
+22:19:42.344 [localhost-startStop-1] DEBUG com.mawujun.controller.spring.SpringContextHolder - 注入ApplicationContext到SpringContextHolder:null
+22:22:23.335 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.UserRepository.getByLoginName - ==>  Preparing: select * from t_user a where a.loginName=? 
+22:22:23.362 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.UserRepository.getByLoginName - ==> Parameters: admin(String)
+22:22:23.396 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.UserRepository.getByLoginName - <==      Total: 1
+22:22:23.411 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==>  Preparing: select c.url from t_role_user a,t_role_menu b,t_menu c where a.role_id=b.role_id and b.menu_id=c.id and a.user_id=? 
+22:22:23.412 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==> Parameters: admin(String)
+22:22:23.419 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.UserRepository.findPermissions - <==      Total: 3
+22:22:23.562 [http-bio-8087-exec-3] INFO  com.mawujun.controller.shiro.ShiroURLPermissionsFilter - 当前路径/main/index.jsp匹配 '/main/**'. 所以不进行权限验证
+22:22:28.510 [http-bio-8087-exec-9] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id is null and b.user_id =? 
+22:22:28.510 [http-bio-8087-exec-9] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: admin(String)
+22:22:28.523 [http-bio-8087-exec-9] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 3
+22:22:28.524 [http-bio-8087-exec-9] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+22:22:28.525 [http-bio-8087-exec-9] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: 1a6a75a5-0720-4388-8d67-345393bba3a2(String), admin(String)
+22:22:28.526 [http-bio-8087-exec-9] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+22:22:28.526 [http-bio-8087-exec-9] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+22:22:28.526 [http-bio-8087-exec-9] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: a49cf606-5dbb-4804-bd0c-63da6f2a03e7(String), admin(String)
+22:22:28.527 [http-bio-8087-exec-9] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+22:22:28.528 [http-bio-8087-exec-9] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+22:22:28.528 [http-bio-8087-exec-9] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: feadcca4-275e-4ffd-80e6-6e559e6ec2f9(String), admin(String)
+22:22:28.529 [http-bio-8087-exec-9] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+22:23:12.465 [http-bio-8087-exec-9] DEBUG com.mawujun.repository.hibernate.HibernateDao - save entity: com.mawujun.permission.Menu@1b1efe75
+22:26:56.299 [localhost-startStop-1] DEBUG com.mawujun.config.DispatcherServletInitializer - No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
+22:27:04.572 [localhost-startStop-1] DEBUG com.mawujun.controller.spring.SpringContextHolder - 注入ApplicationContext到SpringContextHolder:null
+22:27:36.282 [http-bio-8087-exec-3] DEBUG com.mawujun.permission.UserRepository.getByLoginName - ==>  Preparing: select * from t_user a where a.loginName=? 
+22:27:36.315 [http-bio-8087-exec-3] DEBUG com.mawujun.permission.UserRepository.getByLoginName - ==> Parameters: admin(String)
+22:27:36.352 [http-bio-8087-exec-3] DEBUG com.mawujun.permission.UserRepository.getByLoginName - <==      Total: 1
+22:27:36.372 [http-bio-8087-exec-3] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==>  Preparing: select c.url from t_role_user a,t_role_menu b,t_menu c where a.role_id=b.role_id and b.menu_id=c.id and a.user_id=? 
+22:27:36.373 [http-bio-8087-exec-3] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==> Parameters: admin(String)
+22:27:36.378 [http-bio-8087-exec-3] DEBUG com.mawujun.permission.UserRepository.findPermissions - <==      Total: 3
+22:27:36.528 [http-bio-8087-exec-6] INFO  com.mawujun.controller.shiro.ShiroURLPermissionsFilter - 当前路径/main/index.jsp匹配 '/main/**'. 所以不进行权限验证
+22:27:42.108 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id is null and b.user_id =? 
+22:27:42.109 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: admin(String)
+22:27:42.114 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 3
+22:27:42.115 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+22:27:42.115 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: 1a6a75a5-0720-4388-8d67-345393bba3a2(String), admin(String)
+22:27:42.116 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+22:27:42.116 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+22:27:42.116 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: a49cf606-5dbb-4804-bd0c-63da6f2a03e7(String), admin(String)
+22:27:42.117 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+22:27:42.118 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+22:27:42.118 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: feadcca4-275e-4ffd-80e6-6e559e6ec2f9(String), admin(String)
+22:27:42.119 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+22:30:33.821 [http-bio-8087-exec-3] DEBUG com.mawujun.repository.hibernate.HibernateDao - save entity: com.mawujun.permission.Menu@348d5ac3
+22:30:33.957 [http-bio-8087-exec-3] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving exception from handler [public com.mawujun.permission.Menu com.mawujun.permission.MenuController.create(com.mawujun.permission.Menu)]: org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:30:33.958 [http-bio-8087-exec-3] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving to view 'common_error' for exception of type [org.hibernate.exception.ConstraintViolationException], based on exception mapping [org.hibernate.exception.ConstraintViolationException]
+22:30:33.958 [http-bio-8087-exec-3] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Applying HTTP status code 503
+22:30:33.958 [http-bio-8087-exec-3] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Exposing Exception as model attribute 'exception'
+22:30:33.958 [http-bio-8087-exec-3] INFO  com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:31:26.671 [http-bio-8087-exec-4] DEBUG com.mawujun.repository.hibernate.HibernateDao - save entity: com.mawujun.permission.Menu@262b4183
+22:31:26.720 [http-bio-8087-exec-4] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving exception from handler [public com.mawujun.permission.Menu com.mawujun.permission.MenuController.create(com.mawujun.permission.Menu)]: org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:31:26.720 [http-bio-8087-exec-4] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving to view 'common_error' for exception of type [org.hibernate.exception.ConstraintViolationException], based on exception mapping [org.hibernate.exception.ConstraintViolationException]
+22:31:26.720 [http-bio-8087-exec-4] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Applying HTTP status code 503
+22:31:26.720 [http-bio-8087-exec-4] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Exposing Exception as model attribute 'exception'
+22:31:26.720 [http-bio-8087-exec-4] INFO  com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:33:07.504 [http-bio-8087-exec-2] DEBUG com.mawujun.repository.hibernate.HibernateDao - delete entity: com.mawujun.permission.Menu@73a8e8a6
+22:33:26.382 [http-bio-8087-exec-1] DEBUG com.mawujun.repository.hibernate.HibernateDao - save entity: com.mawujun.permission.Menu@231414cf
+22:42:43.776 [localhost-startStop-1] DEBUG com.mawujun.config.DispatcherServletInitializer - No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
+22:43:53.401 [localhost-startStop-1] DEBUG com.mawujun.config.DispatcherServletInitializer - No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
+22:44:01.209 [localhost-startStop-1] DEBUG com.mawujun.controller.spring.SpringContextHolder - 注入ApplicationContext到SpringContextHolder:null
+22:44:20.115 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.UserRepository.getByLoginName - ==>  Preparing: select * from t_user a where a.loginName=? 
+22:44:20.149 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.UserRepository.getByLoginName - ==> Parameters: admin(String)
+22:44:20.183 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.UserRepository.getByLoginName - <==      Total: 1
+22:44:20.199 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==>  Preparing: select c.url from t_role_user a,t_role_menu b,t_menu c where a.role_id=b.role_id and b.menu_id=c.id and a.user_id=? 
+22:44:20.200 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==> Parameters: admin(String)
+22:44:20.208 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.UserRepository.findPermissions - <==      Total: 3
+22:44:20.365 [http-bio-8087-exec-9] INFO  com.mawujun.controller.shiro.ShiroURLPermissionsFilter - 当前路径/main/index.jsp匹配 '/main/**'. 所以不进行权限验证
+22:44:25.598 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id is null and b.user_id =? 
+22:44:25.598 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: admin(String)
+22:44:25.870 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 3
+22:44:25.871 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+22:44:25.872 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: 1a6a75a5-0720-4388-8d67-345393bba3a2(String), admin(String)
+22:44:25.873 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+22:44:25.873 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+22:44:25.874 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: a49cf606-5dbb-4804-bd0c-63da6f2a03e7(String), admin(String)
+22:44:25.874 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+22:44:25.875 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+22:44:25.875 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: feadcca4-275e-4ffd-80e6-6e559e6ec2f9(String), admin(String)
+22:44:25.876 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+22:44:49.405 [http-bio-8087-exec-10] DEBUG com.mawujun.repository.hibernate.HibernateDao - save entity: com.mawujun.permission.Menu@10948b19
+22:44:49.493 [http-bio-8087-exec-10] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving exception from handler [public com.mawujun.permission.Menu com.mawujun.permission.MenuController.create(com.mawujun.permission.Menu)]: org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:44:49.493 [http-bio-8087-exec-10] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving to view 'common_error' for exception of type [org.hibernate.exception.ConstraintViolationException], based on exception mapping [org.hibernate.exception.ConstraintViolationException]
+22:44:49.493 [http-bio-8087-exec-10] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Applying HTTP status code 503
+22:44:49.493 [http-bio-8087-exec-10] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Exposing Exception as model attribute 'exception'
+22:44:49.493 [http-bio-8087-exec-10] INFO  com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:48:14.065 [http-bio-8087-exec-8] DEBUG com.mawujun.repository.hibernate.HibernateDao - save entity: com.mawujun.permission.Menu@db7b06a
+22:48:14.108 [http-bio-8087-exec-8] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving exception from handler [public com.mawujun.permission.Menu com.mawujun.permission.MenuController.create(com.mawujun.permission.Menu)]: org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:48:14.108 [http-bio-8087-exec-8] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving to view 'common_error' for exception of type [org.hibernate.exception.ConstraintViolationException], based on exception mapping [org.hibernate.exception.ConstraintViolationException]
+22:48:14.108 [http-bio-8087-exec-8] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Applying HTTP status code 503
+22:48:14.108 [http-bio-8087-exec-8] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Exposing Exception as model attribute 'exception'
+22:48:14.108 [http-bio-8087-exec-8] INFO  com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:50:02.222 [http-bio-8087-exec-2] DEBUG com.mawujun.repository.hibernate.HibernateDao - save entity: com.mawujun.permission.Menu@27c4d04d
+22:50:02.260 [http-bio-8087-exec-2] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving exception from handler [public com.mawujun.permission.Menu com.mawujun.permission.MenuController.create(com.mawujun.permission.Menu)]: org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:50:02.261 [http-bio-8087-exec-2] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving to view 'common_error' for exception of type [org.hibernate.exception.ConstraintViolationException], based on exception mapping [org.hibernate.exception.ConstraintViolationException]
+22:50:02.261 [http-bio-8087-exec-2] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Applying HTTP status code 503
+22:50:02.261 [http-bio-8087-exec-2] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Exposing Exception as model attribute 'exception'
+22:50:02.261 [http-bio-8087-exec-2] INFO  com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:50:36.442 [http-bio-8087-exec-4] INFO  com.mawujun.controller.shiro.ShiroURLPermissionsFilter - 当前路径/main/index.jsp匹配 '/main/**'. 所以不进行权限验证
+22:50:42.340 [http-bio-8087-exec-13] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id is null and b.user_id =? 
+22:50:42.340 [http-bio-8087-exec-13] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: admin(String)
+22:50:42.341 [http-bio-8087-exec-13] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 3
+22:50:42.342 [http-bio-8087-exec-13] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+22:50:42.342 [http-bio-8087-exec-13] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: 1a6a75a5-0720-4388-8d67-345393bba3a2(String), admin(String)
+22:50:42.343 [http-bio-8087-exec-13] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+22:50:42.343 [http-bio-8087-exec-13] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+22:50:42.343 [http-bio-8087-exec-13] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: a49cf606-5dbb-4804-bd0c-63da6f2a03e7(String), admin(String)
+22:50:42.344 [http-bio-8087-exec-13] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+22:50:42.345 [http-bio-8087-exec-13] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+22:50:42.345 [http-bio-8087-exec-13] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: feadcca4-275e-4ffd-80e6-6e559e6ec2f9(String), admin(String)
+22:50:42.346 [http-bio-8087-exec-13] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+22:50:44.478 [http-bio-8087-exec-8] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==>  Preparing: select c.url from t_role_user a,t_role_menu b,t_menu c where a.role_id=b.role_id and b.menu_id=c.id and a.user_id=? 
+22:50:44.478 [http-bio-8087-exec-8] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==> Parameters: admin(String)
+22:50:44.479 [http-bio-8087-exec-8] DEBUG com.mawujun.permission.UserRepository.findPermissions - <==      Total: 3
+22:51:01.956 [http-bio-8087-exec-14] DEBUG com.mawujun.repository.hibernate.HibernateDao - save entity: com.mawujun.permission.Menu@799e3dbc
+22:51:01.994 [http-bio-8087-exec-14] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving exception from handler [public com.mawujun.permission.Menu com.mawujun.permission.MenuController.create(com.mawujun.permission.Menu)]: org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:51:01.994 [http-bio-8087-exec-14] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving to view 'common_error' for exception of type [org.hibernate.exception.ConstraintViolationException], based on exception mapping [org.hibernate.exception.ConstraintViolationException]
+22:51:01.994 [http-bio-8087-exec-14] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Applying HTTP status code 503
+22:51:01.994 [http-bio-8087-exec-14] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Exposing Exception as model attribute 'exception'
+22:51:01.994 [http-bio-8087-exec-14] INFO  com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:51:13.727 [http-bio-8087-exec-16] DEBUG com.mawujun.repository.hibernate.HibernateDao - delete entity: com.mawujun.permission.Menu@66d1eb48
+22:51:20.336 [http-bio-8087-exec-13] DEBUG com.mawujun.repository.hibernate.HibernateDao - save entity: com.mawujun.permission.Menu@761d745d
+22:51:27.669 [http-bio-8087-exec-10] DEBUG com.mawujun.repository.hibernate.HibernateDao - delete entity: com.mawujun.permission.Menu@8901e33
+22:51:33.660 [http-bio-8087-exec-2] DEBUG com.mawujun.repository.hibernate.HibernateDao - save entity: com.mawujun.permission.Menu@360e68af
+22:51:44.683 [http-bio-8087-exec-6] DEBUG com.mawujun.repository.hibernate.HibernateDao - save entity: com.mawujun.permission.Menu@48c2bf1a
+22:51:44.722 [http-bio-8087-exec-6] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving exception from handler [public com.mawujun.permission.Menu com.mawujun.permission.MenuController.create(com.mawujun.permission.Menu)]: org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:51:44.722 [http-bio-8087-exec-6] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving to view 'common_error' for exception of type [org.hibernate.exception.ConstraintViolationException], based on exception mapping [org.hibernate.exception.ConstraintViolationException]
+22:51:44.722 [http-bio-8087-exec-6] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Applying HTTP status code 503
+22:51:44.722 [http-bio-8087-exec-6] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Exposing Exception as model attribute 'exception'
+22:51:44.722 [http-bio-8087-exec-6] INFO  com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:57:39.670 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id is null and b.user_id =? 
+22:57:39.670 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: admin(String)
+22:57:39.671 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 3
+22:57:39.672 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+22:57:39.672 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: 1a6a75a5-0720-4388-8d67-345393bba3a2(String), admin(String)
+22:57:39.673 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+22:57:39.673 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+22:57:39.673 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: a49cf606-5dbb-4804-bd0c-63da6f2a03e7(String), admin(String)
+22:57:39.674 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+22:57:39.674 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+22:57:39.675 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: feadcca4-275e-4ffd-80e6-6e559e6ec2f9(String), admin(String)
+22:57:39.675 [http-bio-8087-exec-10] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+22:57:42.830 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==>  Preparing: select c.url from t_role_user a,t_role_menu b,t_menu c where a.role_id=b.role_id and b.menu_id=c.id and a.user_id=? 
+22:57:42.830 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==> Parameters: admin(String)
+22:57:42.831 [http-bio-8087-exec-7] DEBUG com.mawujun.permission.UserRepository.findPermissions - <==      Total: 3
+22:58:03.882 [http-bio-8087-exec-10] DEBUG com.mawujun.repository.hibernate.HibernateDao - save entity: com.mawujun.permission.Menu@13d72f76
+22:58:03.922 [http-bio-8087-exec-10] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving exception from handler [public com.mawujun.permission.Menu com.mawujun.permission.MenuController.create(com.mawujun.permission.Menu)]: org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:58:03.922 [http-bio-8087-exec-10] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving to view 'common_error' for exception of type [org.hibernate.exception.ConstraintViolationException], based on exception mapping [org.hibernate.exception.ConstraintViolationException]
+22:58:03.922 [http-bio-8087-exec-10] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Applying HTTP status code 503
+22:58:03.922 [http-bio-8087-exec-10] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Exposing Exception as model attribute 'exception'
+22:58:03.922 [http-bio-8087-exec-10] INFO  com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:58:57.940 [http-bio-8087-exec-6] DEBUG com.mawujun.repository.hibernate.HibernateDao - save entity: com.mawujun.permission.Menu@733564c5
+22:58:57.977 [http-bio-8087-exec-6] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving exception from handler [public com.mawujun.permission.Menu com.mawujun.permission.MenuController.create(com.mawujun.permission.Menu)]: org.hibernate.exception.ConstraintViolationException: could not execute batch
+22:58:57.978 [http-bio-8087-exec-6] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving to view 'common_error' for exception of type [org.hibernate.exception.ConstraintViolationException], based on exception mapping [org.hibernate.exception.ConstraintViolationException]
+22:58:57.978 [http-bio-8087-exec-6] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Applying HTTP status code 503
+22:58:57.978 [http-bio-8087-exec-6] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Exposing Exception as model attribute 'exception'
+22:58:57.978 [http-bio-8087-exec-6] INFO  com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - org.hibernate.exception.ConstraintViolationException: could not execute batch
+23:00:17.215 [http-bio-8087-exec-9] DEBUG com.mawujun.repository.hibernate.HibernateDao - save entity: com.mawujun.permission.Menu@582d824
+23:00:30.399 [http-bio-8087-exec-9] DEBUG com.mawujun.repository.hibernate.HibernateDao - delete entity: com.mawujun.permission.Menu@7b780798
+23:07:40.642 [localhost-startStop-1] DEBUG com.mawujun.config.DispatcherServletInitializer - No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
+23:07:48.947 [localhost-startStop-1] DEBUG com.mawujun.controller.spring.SpringContextHolder - 注入ApplicationContext到SpringContextHolder:null
+23:08:23.436 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.UserRepository.getByLoginName - ==>  Preparing: select * from t_user a where a.loginName=? 
+23:08:23.470 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.UserRepository.getByLoginName - ==> Parameters: admin(String)
+23:08:23.508 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.UserRepository.getByLoginName - <==      Total: 1
+23:08:23.527 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==>  Preparing: select c.url from t_role_user a,t_role_menu b,t_menu c where a.role_id=b.role_id and b.menu_id=c.id and a.user_id=? 
+23:08:23.528 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.UserRepository.findPermissions - ==> Parameters: admin(String)
+23:08:23.533 [http-bio-8087-exec-4] DEBUG com.mawujun.permission.UserRepository.findPermissions - <==      Total: 3
+23:08:23.655 [http-bio-8087-exec-1] INFO  com.mawujun.controller.shiro.ShiroURLPermissionsFilter - 当前路径/main/index.jsp匹配 '/main/**'. 所以不进行权限验证
+23:08:31.246 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id is null and b.user_id =? 
+23:08:31.246 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: admin(String)
+23:08:31.254 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 3
+23:08:31.255 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+23:08:31.256 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: 1a6a75a5-0720-4388-8d67-345393bba3a2(String), admin(String)
+23:08:31.257 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+23:08:31.257 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+23:08:31.257 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: a49cf606-5dbb-4804-bd0c-63da6f2a03e7(String), admin(String)
+23:08:31.260 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+23:08:31.262 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==>  Preparing: select a.* from t_menu a , t_role_user b,t_role_menu c where a.menuType='menu' and b.role_id=c.role_id and c.menu_id=a.id and a.parent_id=? and b.user_id =? 
+23:08:31.262 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.MenuRepository.queryByUser - ==> Parameters: feadcca4-275e-4ffd-80e6-6e559e6ec2f9(String), admin(String)
+23:08:31.263 [http-bio-8087-exec-1] DEBUG com.mawujun.permission.MenuRepository.queryByUser - <==      Total: 0
+23:08:56.544 [http-bio-8087-exec-9] DEBUG com.mawujun.repository.hibernate.HibernateDao - save entity: com.mawujun.permission.Menu@49f38fff
+23:08:56.648 [http-bio-8087-exec-9] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving exception from handler [public com.mawujun.permission.Menu com.mawujun.permission.MenuController.create(com.mawujun.permission.Menu)]: org.hibernate.exception.ConstraintViolationException: could not execute batch
+23:08:56.649 [http-bio-8087-exec-9] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Resolving to view 'common_error' for exception of type [org.hibernate.exception.ConstraintViolationException], based on exception mapping [org.hibernate.exception.ConstraintViolationException]
+23:08:56.649 [http-bio-8087-exec-9] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Applying HTTP status code 503
+23:08:56.649 [http-bio-8087-exec-9] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Exposing Exception as model attribute 'exception'
+23:08:56.649 [http-bio-8087-exec-9] INFO  com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - org.hibernate.exception.ConstraintViolationException: could not execute batch

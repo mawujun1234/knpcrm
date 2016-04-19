@@ -29,7 +29,7 @@
 				<finalName>ROOT</finalName>
 				<jdbc.dbType>mysql</jdbc.dbType>
 				<jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
-				<jdbc.url>jdbc:mysql://127.0.0.1:3306/knpcrm</jdbc.url>
+				<jdbc.url>jdbc:mysql://127.0.0.1:3306/knpcrm?useUnicode=true&amp;characterEncoding=UTF-8</jdbc.url>
 				<jdbc.username>knpcrm</jdbc.username>
 				<jdbc.password>knpcrm</jdbc.password>
 				<hibernate.hbm2ddl.auto>update</hibernate.hbm2ddl.auto>
