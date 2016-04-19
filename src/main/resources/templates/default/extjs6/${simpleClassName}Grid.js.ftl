@@ -343,16 +343,16 @@ Ext.define('${extenConfig.extjs_packagePrefix}.${module}.${simpleClassName}Grid'
 	            	grid.getStore().getProxy().extraParams={
 	            		<#list queryProperties as propertyColumn>
 	            		<#if propertyColumn.jsType=='date'>
-	            		'${propertyColumn.property}_start': Ext.Date.format(grid.down("#${propertyColumn.property}_start").getValue(),'Y-m-d H:i:s'),
-	            		'${propertyColumn.property}_end': Ext.Date.format(grid.down("#${propertyColumn.property}_end").getValue(),'Y-m-d H:i:s')<#if propertyColumn_has_next>,</#if>
+	            		"params['${propertyColumn.property}_start']": Ext.Date.format(grid.down("#${propertyColumn.property}_start").getValue(),'Y-m-d H:i:s'),
+	            		"params['${propertyColumn.property}_end']": Ext.Date.format(grid.down("#${propertyColumn.property}_end").getValue(),'Y-m-d H:i:s')<#if propertyColumn_has_next>,</#if>
 						<#elseif propertyColumn.jsType=='bool'>
-						'${propertyColumn.property}':grid.down("#${propertyColumn.property}").getValue()<#if propertyColumn_has_next>,</#if>
+						"params['${propertyColumn.property}']":grid.down("#${propertyColumn.property}").getValue()<#if propertyColumn_has_next>,</#if>
 						<#elseif propertyColumn.jsType=='int' >
-						'${propertyColumn.property}':grid.down("#${propertyColumn.property}").getValue()<#if propertyColumn_has_next>,</#if>
+						"params['${propertyColumn.property}']":grid.down("#${propertyColumn.property}").getValue()<#if propertyColumn_has_next>,</#if>
 						<#elseif propertyColumn.jsType=='float'>
-						'${propertyColumn.property}':grid.down("#${propertyColumn.property}").getValue()<#if propertyColumn_has_next>,</#if>
+						"params['${propertyColumn.property}']":grid.down("#${propertyColumn.property}").getValue()<#if propertyColumn_has_next>,</#if>
 						<#else>
-						'${propertyColumn.property}':grid.down("#${propertyColumn.property}").getValue()<#if propertyColumn_has_next>,</#if>
+						"params['${propertyColumn.property}']":grid.down("#${propertyColumn.property}").getValue()<#if propertyColumn_has_next>,</#if>
 						</#if>
 		                </#list>
 	                };
