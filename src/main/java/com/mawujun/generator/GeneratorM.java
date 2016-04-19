@@ -15,7 +15,7 @@ public class GeneratorM {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		GeneratorMT generatorMT=new GeneratorMT();
-		generatorMT.generateM("com.youngor","E:\\eclipse\\aaa\\orderingSystem\\src\\main\\java","com.youngor.utils");
+		generatorMT.generateM("com.mawujun","E:\\eclipse\\aaa\\knpcrm\\src\\main\\java","com.mawujun.utils");
 	}
 
 }

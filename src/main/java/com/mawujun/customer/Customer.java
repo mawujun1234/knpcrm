@@ -4,6 +4,10 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+import org.hibernate.annotations.GenericGenerator;
 
 import com.mawujun.generator.model.FieldDefine;
 import com.mawujun.generator.model.ShowType;
@@ -11,8 +15,17 @@ import com.mawujun.utils.UUID;
 
 @Entity(name="t_customer")
 public class Customer extends UUID{
-	
+	@Id
+	@GeneratedValue(generator = "uuid")
+	@GenericGenerator(
+	        name = "uuid",
+	        strategy = "org.hibernate.id.UUIDGenerator"
+	    )
+	@FieldDefine(title="id",hidden=true)
+	@Column(length=36)
+	private String id;
 
+	
 	@FieldDefine(title="客户编码",hidden=false,genQuery=true,sort=50)
 	@Column(length=60,nullable=false)
 	private String code;

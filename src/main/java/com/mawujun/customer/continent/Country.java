@@ -2,12 +2,24 @@ package com.mawujun.customer.continent;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+import org.hibernate.annotations.GenericGenerator;
 
 import com.mawujun.generator.model.FieldDefine;
-import com.mawujun.utils.UUID;
 
 @Entity(name="t_country")
-public class Country extends UUID{
+public class Country {
+	@Id
+	@GeneratedValue(generator = "uuid")
+	@GenericGenerator(
+	        name = "uuid",
+	        strategy = "org.hibernate.id.UUIDGenerator"
+	    )
+	@FieldDefine(title="id",hidden=true)
+	@Column(length=36)
+	private String id;
 	
 	@FieldDefine(title="名称",hidden=false,genQuery=true,sort=50)
 	@Column(length=60,nullable=false)
