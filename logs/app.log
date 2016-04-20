@@ -556,3 +556,4 @@
 23:08:56.649 [http-bio-8087-exec-9] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Applying HTTP status code 503
 23:08:56.649 [http-bio-8087-exec-9] DEBUG com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - Exposing Exception as model attribute 'exception'
 23:08:56.649 [http-bio-8087-exec-9] INFO  com.mawujun.controller.spring.mvc.exception.MappingExceptionResolver - org.hibernate.exception.ConstraintViolationException: could not execute batch
+23:30:20.505 [localhost-startStop-2] DEBUG com.mawujun.controller.spring.SpringContextHolder - 清除SpringContextHolder中的ApplicationContext:WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Apr 19 23:07:41 CST 2016]; root of context hierarchy
