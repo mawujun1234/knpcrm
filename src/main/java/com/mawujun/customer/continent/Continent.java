@@ -26,7 +26,7 @@ public class Continent {
 	@Column(length=60,nullable=false)
 	private String name;
 	@FieldDefine(title="备注",hidden=false,genQuery=false,sort=50)
-	@Column(length=160,nullable=false)
+	@Column(length=160,nullable=true)
 	private String remark;
 	public String getName() {
 		return name;

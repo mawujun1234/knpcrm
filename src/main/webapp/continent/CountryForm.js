@@ -32,17 +32,13 @@ Ext.define('y.continent.CountryForm',{
 	        fieldLabel: '所属洲',
 	        name: 'continent_id',
             allowBlank: false,
-            afterLabelTextTpl: Ext.required,
-            blankText:"所属洲不允许为空",
-            selectOnFocus:true,
+            hidden:true,
 	        xtype:'textfield'
 	    },
 		{
 	        fieldLabel: '备注',
 	        name: 'remark',
-            allowBlank: false,
-            afterLabelTextTpl: Ext.required,
-            blankText:"备注不允许为空",
+  
             selectOnFocus:true,
 	        xtype:'textfield'
 	    },
@@ -50,7 +46,6 @@ Ext.define('y.continent.CountryForm',{
 	        fieldLabel: 'id',
 	        name: 'id',
             hidden:true,
-            selectOnFocus:true,
 	        xtype:'textfield'
 	    }
 	  ];   

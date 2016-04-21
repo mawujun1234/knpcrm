@@ -41,39 +41,40 @@ public class ContinentController {
 	@RequestMapping("/continent/query.do")
 	@ResponseBody
 	public List<Continent> query(String name) {	
-		List<Continent> continentes=continentService.query(Cnd.select().andLike(M.Continent.name, name));
+		List<Continent> continentes=continentService.queryAll();
 		return continentes;
 	}
 	
 
 	@RequestMapping("/continent/load.do")
+	@ResponseBody
 	public Continent load(String id) {
 		return continentService.get(id);
 	}
 	
 	@RequestMapping("/continent/create.do")
-	//@ResponseBody
+	@ResponseBody
 	public Continent create(@RequestBody Continent continent) {
 		continentService.create(continent);
 		return continent;
 	}
 	
 	@RequestMapping("/continent/update.do")
-	//@ResponseBody
+	@ResponseBody
 	public  Continent update(@RequestBody Continent continent) {
 		continentService.update(continent);
 		return continent;
 	}
 	
 	@RequestMapping("/continent/deleteById.do")
-	//@ResponseBody
+	@ResponseBody
 	public String deleteById(String id) {
 		continentService.deleteById(id);
 		return id;
 	}
 	
 	@RequestMapping("/continent/destroy.do")
-	//@ResponseBody
+	@ResponseBody
 	public Continent destroy(@RequestBody Continent continent) {
 		continentService.delete(continent);
 		return continent;

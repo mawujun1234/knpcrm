@@ -42,8 +42,8 @@ public class CountryController {
 
 	@RequestMapping("/country/query.do")
 	@ResponseBody
-	public List<Country> query(String name) {	
-		List<Country> country=countryService.query(Cnd.select().andLike(M.Continent.name, name));
+	public List<Country> query(String name,String continent_id) {	
+		List<Country> country=countryService.query(Cnd.select().andEquals(M.Country.continent_id, continent_id).andLikeIf(M.Continent.name, name));
 		return country;
 	}
 	

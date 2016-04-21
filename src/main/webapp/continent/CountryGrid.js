@@ -12,8 +12,6 @@ Ext.define('y.continent.CountryGrid',{
       	{xtype: 'rownumberer'},
 		{dataIndex:'name',header:'名称'
         },
-		{dataIndex:'continent_id',header:'所属洲'
-        },
 		{dataIndex:'remark',header:'备注'
         },
       ];
@@ -64,9 +62,9 @@ Ext.define('y.continent.CountryGrid',{
             	iconCls:'icon-search',
             	handler:function(btn){
             		var grid=btn.up("grid");
-	            	grid.getStore().getProxy().extraParams={
+	            	grid.getStore().getProxy().extraParams=Ext.apply(grid.getStore().getProxy().extraParams,{
 						'name':grid.down("#name").getValue()
-	                };
+	                });
             		grid.getStore().reload();
             	}
             }
@@ -116,7 +114,7 @@ Ext.define('y.continent.CountryGrid',{
 	onCreate:function(){
     	var me=this;
 		var child=Ext.create('y.continent.Country',{
-
+			continent_id:me.continent_id
 		});
 		child.set("id",null);
 		

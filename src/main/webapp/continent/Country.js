@@ -13,7 +13,7 @@ Ext.define("y.continent.Country",{
 		headers:{ 'Accept':'application/json;'},
 		writer:{
 			type:'json',
-			writeRecordId:true,
+			//writeRecordId:true,
 			writeAllFields:true
 		},
 		reader:{

@@ -31,9 +31,6 @@ Ext.define('y.continent.ContinentForm',{
 		{
 	        fieldLabel: '备注',
 	        name: 'remark',
-            allowBlank: false,
-            afterLabelTextTpl: Ext.required,
-            blankText:"备注不允许为空",
             selectOnFocus:true,
 	        xtype:'textfield'
 	    },

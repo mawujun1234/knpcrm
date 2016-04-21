@@ -21,15 +21,21 @@ public class Country {
 	@Column(length=36)
 	private String id;
 	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	@FieldDefine(title="名称",hidden=false,genQuery=true,sort=50)
 	@Column(length=60,nullable=false)
 	private String name;
-	@FieldDefine(title="所属洲",hidden=false,genQuery=false,sort=50)
-	@Column(length=36,nullable=false)
+	@FieldDefine(title="所属洲",hidden=true,genQuery=false,sort=50)
+	@Column(length=36,nullable=true)
 	private String continent_id;
 	
 	@FieldDefine(title="备注",hidden=false,genQuery=false,sort=50)
-	@Column(length=160,nullable=false)
+	@Column(length=160,nullable=true)
 	private String remark;
 	public String getName() {
 		return name;

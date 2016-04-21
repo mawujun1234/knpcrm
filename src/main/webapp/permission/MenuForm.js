@@ -76,6 +76,7 @@ Ext.define('y.permission.MenuForm',{
 			handler : function(button){
 				var formpanel = button.up('form');
 				button.up('form').updateRecord();
+				
 				button.up('form').getForm().getRecord().save({
 					failure: function(record, operation) {
 				    },

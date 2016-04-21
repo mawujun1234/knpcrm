@@ -38,38 +38,33 @@ Ext.define('y.continent.ContinentGrid',{
 	  });
 
 	  me.dockedItems=[];
-      me.dockedItems.push({
-	        xtype: 'pagingtoolbar',
-	        store: me.store,  
-	        dock: 'bottom',
-	        displayInfo: true
-	  });
-	  me.dockedItems.push({
-	  	xtype: 'toolbar',
-	  	dock:'top',
-	  	//enableOverflow:true,
-		items:[
-			{
-                xtype: 'textfield',
-				itemId:'name',
-                fieldLabel: '名称',
-                labelWidth:60,
-                width:150,
-                selectOnFocus:true 
-            },
-	    	{
-            	text:'查询',
-            	iconCls:'icon-search',
-            	handler:function(btn){
-            		var grid=btn.up("grid");
-	            	grid.getStore().getProxy().extraParams={
-						'name':grid.down("#name").getValue()
-	                };
-            		grid.getStore().reload();
-            	}
-            }
-	  	]
-	  });
+     
+	  // me.dockedItems.push({
+	  	// xtype: 'toolbar',
+	  	// dock:'top',
+	  	// //enableOverflow:true,
+		// items:[
+			// {
+                // xtype: 'textfield',
+				// itemId:'name',
+                // fieldLabel: '名称',
+                // labelWidth:60,
+                // width:150,
+                // selectOnFocus:true 
+            // },
+	    	// {
+            	// text:'查询',
+            	// iconCls:'icon-search',
+            	// handler:function(btn){
+            		// var grid=btn.up("grid");
+	            	// grid.getStore().getProxy().extraParams={
+						// 'name':grid.down("#name").getValue()
+	                // };
+            		// grid.getStore().reload();
+            	// }
+            // }
+	  	// ]
+	  // });
 	  
 	  me.dockedItems.push({
 	  		xtype: 'toolbar',
