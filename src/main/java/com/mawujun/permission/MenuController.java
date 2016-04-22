@@ -97,6 +97,9 @@ public class MenuController {
 		if("root".equals(menu.getParent_id())){
 			menu.setParent_id(null);
 		}
+		if("".equals(menu.getCode())){
+			menu.setCode(null);
+		}
 		menuService.create(menu);
 		return menu;
 	}
