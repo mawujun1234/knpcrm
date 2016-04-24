@@ -108,6 +108,9 @@ public class MenuController {
 	//@ResponseBody
 	public  Menu update(@RequestBody Menu menu) {
 		menuService.update(menu);
+		if("".equals(menu.getCode())){
+			menu.setCode(null);
+		}
 		return menu;
 	}
 	

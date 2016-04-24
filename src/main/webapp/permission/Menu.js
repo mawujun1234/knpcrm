@@ -18,7 +18,7 @@ Ext.define("y.permission.Menu",{
 		headers:{ 'Accept':'application/json;'},
 		writer:{
 			type:'json',
-			writeAllFields:false
+			writeAllFields:true
 		},
 		api:{
 			read:Ext.ContextPath+'/menu/query.do',
