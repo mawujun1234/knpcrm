@@ -4,9 +4,9 @@ PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
 "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
 
 <!-- mawujun qq:16064988 e-mail:16064988@qq.com-->
-<mapper namespace="com.mawujun.org.OrgRepository">
+<mapper namespace="com.youngor.org.OrgRepository">
 	<!-- -->
-    <select id="query" resultType="com.mawujun.org.NodeVO" parameterType="map">
+    <select id="query" resultType="com.youngor.org.NodeVO" parameterType="map">
     	select a.orgno as id,orgnm as name,0 leaf,a.orgno,'' as remark,'org' as type from t_org a,t_org_org b
     	where a.orgno=b.child_no  
     	and b.parent_no=#{parent_id}

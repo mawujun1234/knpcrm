@@ -60,6 +60,17 @@ public class Menu {
 	@Column(length=150)
 	@FieldDefine(title="备注")
 	private String remark;
+	
+	public void setCode(String code) {
+		if("".equals(code)){
+			this.code = null;
+		} else {
+			this.code = code;
+		}
+		
+	}
+	
+	
 
 	public String getId() {
 		return id;
@@ -105,8 +116,6 @@ public class Menu {
 		return code;
 	}
 
-	public void setCode(String code) {
-		this.code = code;
-	}
+	
 
 }

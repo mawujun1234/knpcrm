@@ -12,7 +12,7 @@ import com.mawujun.controller.shiro.IShiroUser;
 import com.mawujun.generator.model.FieldDefine;
 
 @Entity
-@Table(name="t_user")
+@Table(name="t_user",schema="od")
 public class User implements IShiroUser{
 	@Id
 	@GeneratedValue(generator = "uuid")

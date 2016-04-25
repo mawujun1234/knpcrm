@@ -9,7 +9,7 @@ import com.mawujun.repository.IRepository;
  * @since 1.0
  */
 @Repository
-public interface PositionRepository extends IRepository<Position, String>{
+public interface PositionTypeRepository extends IRepository<PositionType, String>{
 
 
 }

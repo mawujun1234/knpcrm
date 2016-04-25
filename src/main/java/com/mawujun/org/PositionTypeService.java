@@ -14,14 +14,14 @@ import com.mawujun.service.AbstractService;
  */
 @Service
 @Transactional(propagation=Propagation.REQUIRED)
-public class PositionService extends AbstractService<Position, String>{
+public class PositionTypeService extends AbstractService<PositionType, String>{
 
 	@Autowired
-	private PositionRepository positionRepository;
+	private PositionTypeRepository positionTypeRepository;
 	
 	@Override
-	public PositionRepository getRepository() {
-		return positionRepository;
+	public PositionTypeRepository getRepository() {
+		return positionTypeRepository;
 	}
 
 }

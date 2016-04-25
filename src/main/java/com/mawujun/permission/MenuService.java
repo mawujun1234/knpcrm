@@ -1,18 +1,13 @@
 package com.mawujun.permission;
 import java.util.List;
-import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.mawujun.permission.Menu;
-import com.mawujun.permission.MenuRepository;
 import com.mawujun.repository.cnd.Cnd;
 import com.mawujun.service.AbstractService;
-
-
 import com.mawujun.utils.M;
 
 
@@ -39,7 +34,7 @@ public class MenuService extends AbstractService<Menu, String>{
 		List<MenuVO> parent_list= menuRepository.query_checkbox(parent_id);
 		for(MenuVO parent:parent_list){
 			parent.setExpanded(true);
-			List<MenuVO> children_list= menuRepository.query_checkbox(parent.getId());
+			List<MenuVO> children_list= this.query_checkbox(parent.getId());
 			parent.setChildren(children_list);
 		}
 		return parent_list;
@@ -63,6 +58,10 @@ public class MenuService extends AbstractService<Menu, String>{
 			parent.setChildren(children_list);
 		}
 		return parent_list;
+	}
+	
+	public List<Menu> queryElement(String jsp_url) {
+		return  menuRepository.queryElement(jsp_url, ShiroUtils.getUserId());
 	}
 
 }

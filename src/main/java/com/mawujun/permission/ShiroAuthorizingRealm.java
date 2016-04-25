@@ -2,7 +2,6 @@ package com.mawujun.permission;
 
 import java.util.Date;
 
-import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -25,6 +24,8 @@ import com.mawujun.exception.BusinessException;
 public class ShiroAuthorizingRealm extends AuthorizingRealm {
 	@Autowired
 	private UserService userService;
+	@Autowired
+	private RoleService roleService;
 
 
 	/**
@@ -33,7 +34,7 @@ public class ShiroAuthorizingRealm extends AuthorizingRealm {
 	@Override
 	protected AuthorizationInfo doGetAuthorizationInfo(
 			PrincipalCollection principals) {
-		User user= (User) principals.getPrimaryPrincipal();
+		UserVO user= (UserVO) principals.getPrimaryPrincipal();
 		String user_id =user.getId();
 		SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
 		
@@ -43,6 +44,10 @@ public class ShiroAuthorizingRealm extends AuthorizingRealm {
 		//authorizationInfo.setRoles(userService.findRoles(username));  
 		authorizationInfo.setStringPermissions(userService.findPermissions(user_id));
 
+//		//往User里面存放，可访问的品牌和可访问的大类
+//		user.setBrandes(roleService.queryUserSelBrand(user.getId()));
+//		user.setClasses(roleService.queryUserSelClass(user.getId()));
+		
 		return authorizationInfo;
 	}
 

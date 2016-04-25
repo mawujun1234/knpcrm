@@ -56,6 +56,7 @@ public class UserController {
         } catch (AuthenticationException e) {  
             //其他错误，比如锁定，如果想单独处理请单独catch处理  
             error = "认证失败，账号不存在!";  
+            e.printStackTrace();
         }  
         if(error != null) {//出错了，返回登录页面  
         	model.addAttribute("msg", error);
@@ -164,9 +165,21 @@ public class UserController {
 		List<User> useres=userService.queryAll();
 		return useres;
 	}
+	/**
+	 * 查询所有设计师
+	 * @author mawujun qq:16064988 mawujun1234@163.com
+	 * @return
+	 */
+	@RequestMapping("/user/querySjs.do")
+	@ResponseBody
+	public List<User> querySjs(String positionType_id) {	
+		List<User> useres=userService.querySjs(positionType_id);
+		return useres;
+	}
 	
 
 	@RequestMapping("/user/load.do")
+	@ResponseBody
 	public User load(String id) {
 		return userService.get(id);
 	}
