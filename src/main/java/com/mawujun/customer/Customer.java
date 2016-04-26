@@ -11,10 +11,9 @@ import org.hibernate.annotations.GenericGenerator;
 
 import com.mawujun.generator.model.FieldDefine;
 import com.mawujun.generator.model.ShowType;
-import com.mawujun.utils.UUID;
 
 @Entity(name="t_customer")
-public class Customer extends UUID{
+public class Customer {
 	@Id
 	@GeneratedValue(generator = "uuid")
 	@GenericGenerator(

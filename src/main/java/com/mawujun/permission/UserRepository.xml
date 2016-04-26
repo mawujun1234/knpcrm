@@ -4,9 +4,9 @@ PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
 "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
 
 <!-- mawujun qq:16064988 e-mail:16064988@qq.com-->
-<mapper namespace="com.youngor.permission.UserRepository">
+<mapper namespace="com.mawujun.permission.UserRepository">
 	<!-- 查询语句，会自动分页-->
-    <select id="queryPage" resultType="com.youngor.permission.User" parameterType="map">
+    <select id="queryPage" resultType="com.mawujun.permission.User" parameterType="map">
     	select * from t_user a,t_role_user b
     	where a.id=b.user_id and b.role_id=#{role_id}
     </select> 
@@ -17,7 +17,7 @@ PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
     </select>
     
     <!--根据职位 获取用户 -->
-    <select id="queryByPosition" resultType="com.youngor.permission.User" parameterType="map">
+    <select id="queryByPosition" resultType="com.mawujun.permission.User" parameterType="map">
     	select a.* from t_user a,t_position_org_user b
     	where a.id=b.user_id and b.position_id=#{position_id}
     	<if test="loginName!=null">
@@ -40,7 +40,7 @@ PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
     </select>
     
     
-    <select id="getByLoginName" resultType="com.youngor.permission.UserVO" parameterType="map">
+    <select id="getByLoginName" resultType="com.mawujun.permission.UserVO" parameterType="map">
     	select * from t_user a
     	where a.loginName=#{loginName}
     </select> 
@@ -51,7 +51,7 @@ PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
 		where a.role_id=b.role_id  and b.menu_id=c.id and c.url is not null and a.user_id=#{user_id} 
 	</select>
 	<!-- 查询设计师的所有户，用于样衣设计的时候-->
-	<select id="querySjs" parameterType="string" resultType="com.youngor.permission.User">
+	<select id="querySjs" parameterType="string" resultType="com.mawujun.permission.User">
 		select a.* from t_user a,t_position_org_user b,t_position c
 		where a.id=b.user_id and b.position_id=c.id and c.positiontype_id=#{positionType_id}
 	</select>

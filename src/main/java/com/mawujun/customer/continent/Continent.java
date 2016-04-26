@@ -8,7 +8,6 @@ import javax.persistence.Id;
 import org.hibernate.annotations.GenericGenerator;
 
 import com.mawujun.generator.model.FieldDefine;
-import com.mawujun.utils.UUID;
 
 @Entity(name="t_continent")
 public class Continent {
