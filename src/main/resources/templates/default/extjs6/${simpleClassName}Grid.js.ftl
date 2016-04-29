@@ -8,7 +8,9 @@ Ext.define('${extenConfig.extjs_packagePrefix}.${module}.${simpleClassName}Grid'
 	],
 	columnLines :true,
 	stripeRows:true,
-
+	viewConfig:{
+		enableTextSelection:true
+	},
 	initComponent: function () {
       var me = this;
      <#-----------------------------------------生成列--------------------------------- ----->
@@ -33,7 +35,7 @@ Ext.define('${extenConfig.extjs_packagePrefix}.${module}.${simpleClassName}Grid'
 		proxy: {
 			autoLoad:true,
 			type: 'ajax',
-			url: Ext.ContextPath+'/${propertyColumn.property}/query.do',
+			url: Ext.ContextPath+'/${propertyColumn.property}/queryPager.do',
 			reader: {
 				type: 'json',
 				rootProperty: '${propertyColumn.property}'

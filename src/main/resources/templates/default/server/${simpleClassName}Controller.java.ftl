@@ -49,9 +49,9 @@ public class ${simpleClassName}Controller {
 	 * @param userName
 	 * @return
 	 */
-	@RequestMapping("/${simpleClassNameFirstLower}/query.do")
+	@RequestMapping("/${simpleClassNameFirstLower}/queryPager.do")
 	@ResponseBody
-	public Pager<${simpleClassName}> query(Pager<${simpleClassName}> pager){
+	public Pager<${simpleClassName}> queryPager(Pager<${simpleClassName}> pager){
 		return ${simpleClassNameFirstLower}Service.queryPage(pager);
 	}
 	</#if>
