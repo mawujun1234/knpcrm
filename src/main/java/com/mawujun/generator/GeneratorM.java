@@ -15,7 +15,10 @@ public class GeneratorM {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		GeneratorMT generatorMT=new GeneratorMT();
-		generatorMT.generateM("com.mawujun","E:\\eclipse\\aaa\\knpcrm\\src\\main\\java","com.mawujun.utils");
+		//generatorMT.generateM("com.mawujun","E:\\eclipse\\aaa\\knpcrm\\src\\main\\java","com.mawujun.utils");
+		//System.out.println(GeneratorM.class.getResource("/").getPath());
+		//System.out.println(System.getProperty("user.dir"));
+		generatorMT.generateM("com.mawujun",System.getProperty("user.dir")+"/src/main/java/","com.mawujun.utils");
 	}
 
 }

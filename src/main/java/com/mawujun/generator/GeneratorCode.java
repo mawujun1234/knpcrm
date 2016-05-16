@@ -3,7 +3,7 @@ package com.mawujun.generator;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 
-import com.mawujun.customer.baseinfo.Property;
+import com.mawujun.constant.CodeItem;
 
 import freemarker.template.TemplateException;
 /**
@@ -26,8 +26,8 @@ public class GeneratorCode {
 		aa.extjs_grid_enable_cellEditing=false;
 		generatorService.setExtenConfig(aa);
 		
-		generatorService.setOutputDir("/opt/generate");
-		generatorService.generatorAllFile(Property.class);
+		//generatorService.setOutputDir("");
+		generatorService.generatorAllFile(CodeItem.class);
 
 	}
 	

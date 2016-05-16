@@ -1,17 +1,48 @@
 package com.mawujun.utils;
 public final class M {
-public static final class Continent {
+public static final class CodeItem {
+	public static final String id="id";
+	public static final String code="code";
+	public static final String name="name";
+	public static final String status="status";
+	public static final String sort="sort";
+	public static final String remark="remark";
+	public static final String parent_id="parent_id";
+	public static final String codeType_id="codeType_id";
+}
+public static final class CodeType {
+	public static final String id="id";
 	public static final String name="name";
 	public static final String remark="remark";
+}
+public static final class BusinessPhase {
 	public static final String id="id";
+	public static final String name="name";
+	public static final String remark="remark";
+}
+public static final class Property {
+	public static final String id="id";
+	public static final String name="name";
+	public static final String remark="remark";
+}
+public static final class Source {
+	public static final String id="id";
+	public static final String name="name";
+	public static final String remark="remark";
+}
+public static final class Continent {
+	public static final String id="id";
+	public static final String name="name";
+	public static final String remark="remark";
 }
 public static final class Country {
+	public static final String id="id";
 	public static final String name="name";
 	public static final String continent_id="continent_id";
 	public static final String remark="remark";
-	public static final String id="id";
 }
 public static final class Customer {
+	public static final String id="id";
 	public static final String code="code";
 	public static final String name="name";
 	public static final String source_id="source_id";
@@ -22,7 +53,6 @@ public static final class Customer {
 	public static final String inquiryContent="inquiryContent";
 	public static final String website="website";
 	public static final String address="address";
-	public static final String id="id";
 }
 public static final class Org {
 	public static final String orgno="orgno";
@@ -76,6 +106,7 @@ public static final class Position {
 	public static final String name="name";
 	public static final String remark="remark";
 	public static final String orgno="orgno";
+	public static final String positionType_id="positionType_id";
 }
 public static final class PositionOrgUser {
 	 /**
@@ -86,6 +117,7 @@ public static final class PositionOrgUser {
 		public static final String name="position.name";
 		public static final String remark="position.remark";
 		public static final String orgno="position.orgno";
+		public static final String positionType_id="position.positionType_id";
 			
 	    /**
 	    * 返回的是关联类的属性名称，主要用于属性过滤的时候
@@ -129,6 +161,11 @@ public static final class PositionOrgUser {
 		    return "user";
 	    }
 	}
+}
+public static final class PositionType {
+	public static final String id="id";
+	public static final String name="name";
+	public static final String remark="remark";
 }
 public static final class Menu {
 	public static final String id="id";
