@@ -31,7 +31,7 @@ public class Org {
 	@Column(length=15,nullable=false)
 	@Enumerated(EnumType.STRING)
 	@FieldDefine(title="渠道类型",sort=4,showType=ShowType.combobox,hidden=false)//
-	private Chancl chancl;//渠道类型 自营，商场，特许
+	private Chancl channo;//渠道类型 自营，商场，特许
 	@Column(length=15,nullable=false)
 	@Enumerated(EnumType.STRING)
 	@FieldDefine(title="状态",sort=4,showType=ShowType.combobox,hidden=false)//
@@ -68,11 +68,11 @@ public class Org {
 	public void setOrgty(Orgty orgty) {
 		this.orgty = orgty;
 	}
-	public Chancl getChancl() {
-		return chancl;
+	public Chancl getChanno() {
+		return channo;
 	}
-	public void setChancl(Chancl chancl) {
-		this.chancl = chancl;
+	public void setChanno(Chancl chancl) {
+		this.channo = chancl;
 	}
 	public Orgst getOrgst() {
 		return orgst;
