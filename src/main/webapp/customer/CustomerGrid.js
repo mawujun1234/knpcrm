@@ -32,22 +32,24 @@ Ext.define('y.customer.CustomerGrid',{
         },
 		{dataIndex:'address',header:'地址'
         },
-		{dataIndex:'experienceyear',header:'光带几年经验'
-        },
-		{dataIndex:'proportion',header:'占比'
-        },
-		{dataIndex:'custtype',header:'客户类型'
-        },
-		{dataIndex:'employeeNum',header:'员工人数'
-        },
-		{dataIndex:'purchasemoney',header:'光带年采购额'
-        },
-		{dataIndex:'qualitylevel',header:'质量档次'
-        },
-		{dataIndex:'moneylevel',header:'价格档次'
-        },
-		{dataIndex:'payclause',header:'付款条款'
-        }
+//		{dataIndex:'experienceyear',header:'光带几年经验'
+//        },
+//		{dataIndex:'proportion',header:'占比'
+//        },
+//		{dataIndex:'custtype',header:'客户类型'
+//        },
+//		{dataIndex:'employeeNum',header:'员工人数'
+//        },
+//		{dataIndex:'purchasemoney',header:'光带年采购额'
+//        },
+//		{dataIndex:'qualitylevel',header:'质量档次'
+//        },
+//		{dataIndex:'moneylevel',header:'价格档次'
+//        },
+//		{dataIndex:'payclause',header:'付款条款'
+//        },
+        {dataIndex:'createDate',header:'创建时间',xtype: 'datecolumn', format:'Y-m-d H:i:s',width:150
+		}
       ];
       
 
@@ -245,7 +247,7 @@ Ext.define('y.customer.CustomerGrid',{
 		});
 		child.set("id",null);
 		
-		var formpanel=Ext.create('y.customer.CustomerForm',{});
+		var formpanel=Ext.create('y.customer.CustomerCreateForm',{});
 		formpanel.loadRecord(child);
 		
     	var win=Ext.create('Ext.window.Window',{

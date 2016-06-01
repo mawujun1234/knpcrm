@@ -1,4 +1,4 @@
-Ext.define('y.customer.CustomerForm',{
+Ext.define('y.customer.CustomerCreateForm',{
 	extend:'Ext.form.Panel',
 	requires: [
 	     'y.customer.Customer'
@@ -149,6 +149,78 @@ Ext.define('y.customer.CustomerForm',{
 		        name: 'address',
 		        colspan:2,
 				width: '100%' ,
+	            selectOnFocus:true,
+		        xtype:'textfield'
+		    }]
+        },
+        {
+       	   xtype:'fieldset',
+	       layout: {
+				 type: 'table',
+		        // The total column count must be specified here
+		        columns: 2
+		    },
+		    title:'默认联系方式',
+			items:[{
+		        fieldLabel: '联系人',
+		        name: 'contacts',
+	            allowBlank: false,
+	            afterLabelTextTpl: Ext.required,
+	            blankText:"联系人不允许为空",
+	            selectOnFocus:true,
+		        xtype:'textfield'
+		    },
+			{
+		        fieldLabel: '职位',
+		        name: 'position',
+	            allowBlank: false,
+	            afterLabelTextTpl: Ext.required,
+	            blankText:"职位不允许为空",
+	            selectOnFocus:true,
+		        xtype:'textfield'
+		    },
+			{
+		        fieldLabel: '电话',
+		        name: 'tel',
+	            allowBlank: false,
+	            afterLabelTextTpl: Ext.required,
+	            blankText:"电话不允许为空",
+	            selectOnFocus:true,
+		        xtype:'textfield'
+		    },
+			{
+		        fieldLabel: '手机',
+		        name: 'tel_mobile',
+	            allowBlank: false,
+	            afterLabelTextTpl: Ext.required,
+	            blankText:"手机不允许为空",
+	            selectOnFocus:true,
+		        xtype:'textfield'
+		    },
+			{
+		        fieldLabel: '聊天账号',
+		        name: 'chatNum',
+	            allowBlank: false,
+	            afterLabelTextTpl: Ext.required,
+	            blankText:"聊天账号不允许为空",
+	            selectOnFocus:true,
+		        xtype:'textfield'
+		    },
+			{
+		        fieldLabel: '传真',
+		        name: 'fax',
+	            allowBlank: false,
+	            afterLabelTextTpl: Ext.required,
+	            blankText:"传真不允许为空",
+	            selectOnFocus:true,
+		        xtype:'textfield'
+		    },
+			{
+		        fieldLabel: '电子邮件',
+		        name: 'email',
+	            allowBlank: false,
+	            afterLabelTextTpl: Ext.required,
+	            blankText:"电子邮件不允许为空",
 	            selectOnFocus:true,
 		        xtype:'textfield'
 		    }]

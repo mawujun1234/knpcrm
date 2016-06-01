@@ -3,7 +3,7 @@ package com.mawujun.generator;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 
-import com.mawujun.customer.Customer;
+import com.mawujun.customer.Contacts;
 
 import freemarker.template.TemplateException;
 /**
@@ -27,7 +27,7 @@ public class GeneratorCode {
 		generatorService.setExtenConfig(aa);
 		
 		//generatorService.setOutputDir("");
-		generatorService.generatorAllFile(Customer.class);
+		generatorService.generatorAllFile(Contacts.class);
 
 	}
 	

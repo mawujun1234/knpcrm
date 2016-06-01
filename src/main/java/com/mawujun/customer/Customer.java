@@ -59,6 +59,8 @@ public class Customer {
 	@Column(length=200,nullable=true)
 	private String address;
 	
+	
+	
 	@FieldDefine(title="光带几年经验",hidden=false,genQuery=false,sort=50)
 	@Column(length=15,nullable=true)
 	private String experienceyear;
@@ -80,6 +82,10 @@ public class Customer {
 	@FieldDefine(title="价格档次",hidden=false,genQuery=false,sort=50,showType=ShowType.combobox)
 	@Column(length=36,nullable=true)
 	private String moneylevel;
+	
+	@FieldDefine(title="创建时间",hidden=false,genQuery=false,sort=50)
+	private Date createDate;
+	
 	public String getId() {
 		return id;
 	}
@@ -197,6 +203,13 @@ public class Customer {
 	@FieldDefine(title="付款条款",hidden=false,genQuery=false,sort=50,showType=ShowType.combobox)
 	@Column(length=36,nullable=true)
 	private String payclause;
+
+	public Date getCreateDate() {
+		return createDate;
+	}
+	public void setCreateDate(Date createDate) {
+		this.createDate = createDate;
+	}
 	
 	
 	

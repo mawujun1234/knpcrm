@@ -48,9 +48,9 @@ Ext.Ajax.on({
 });
 
 //创建读取公共属性的combobox
-Ext.define('y.common.PubCode',{
+Ext.define('y.common.CodeItemComboBox',{
 	extend:'Ext.form.field.ComboBox',
-	xtype:'pubcodecombo',
+	xtype:'codeitemcombo',
 	//fieldLabel: '角色类型',
 	//		name: 'roleType',
 	//value:'rolegroup',
@@ -64,16 +64,16 @@ Ext.define('y.common.PubCode',{
 	queryMode: 'local',
 	editable:false,
 	forceSelection:true,
-	displayField: 'itnm',
-	valueField: 'itno',
+	displayField: 'name',
+	valueField: 'id',
 //    allowBlank: false,
 //    afterLabelTextTpl: Ext.required,
 //    blankText:"菜单类型不允许为空",
 	initComponent: function () {
 		var me=this;
 
-		if(!me.tyno){
-			alert("设置tyno属性！");
+		if(!me.codeType_id){
+			alert("设置codeType_id属性！");
 			return;
 		}
 //		if(!me.allowBlank){
@@ -82,16 +82,16 @@ Ext.define('y.common.PubCode',{
 //		}
 		
 		me.store=Ext.create('Ext.data.Store',{
-			fields: ['itno', 'itnm'],
+			fields: ['id', 'name'],
 			autoLoad:me.autoLoad,
 			proxy: {
 			    
 			    type: 'ajax',
 			    extraParams:{
-			    	tyno:me.tyno
+			    	codeType_id:me.codeType_id
 					//fitno:me.fitno
 			    },
-			    url: Ext.ContextPath+'/pubCodeType/query4Combo.do',
+			    url: Ext.ContextPath+'/codeItem/query4Combo.do',
 			    reader: {
 			        type: 'json'
 			        //rootProperty: '${propertyColumn.property}'
@@ -129,91 +129,3 @@ Ext.define('y.common.PubCode',{
 });
 
 
-Ext.define('y.common.OrdmtCombo',{
-	extend:'Ext.form.field.ComboBox',
-	xtype:'ordmtcombo',
-	//fieldLabel: '角色类型',
-	emptyText:'请选择订货会',
-	//		name: 'roleType',
-	autoLoad:true,
-	queryMode: 'local',
-	editable:false,
-	forceSelection:true,
-	displayField: 'ormtnm',
-	valueField: 'ormtno',
-//    allowBlank: false,
-//    afterLabelTextTpl: Ext.required,
-//    blankText:"菜单类型不允许为空",
-	initComponent: function () {
-		var me=this;
-
-		me.store=Ext.create('Ext.data.Store',{
-			fields: ['ormtno', 'ormtnm'],
-			autoLoad:me.autoLoad,
-			proxy: {
-			    
-			    type: 'ajax',
-			    url: Ext.ContextPath+'/ordmt/query4Combo.do',
-			    reader: {
-			        type: 'json'
-			        //rootProperty: '${propertyColumn.property}'
-			    }
-			},
-			listeners:{
-				load:function(myStore){
-					if(myStore.getCount( ) >0){
-			 			var r=myStore.getAt(0);
-			 			me.select( r );
-			 		}
-				}
-			}
-			
-		});
-		me.callParent();
-	}
-});
-
-
-Ext.define('y.common.PubSunoCombo',{
-	extend:'Ext.form.field.ComboBox',
-	xtype:'pubsunocombo',
-	//fieldLabel: '角色类型',
-	emptyText:'可输入关键字过滤',
-	//		name: 'roleType',
-	autoLoad:true,
-	queryMode: 'local',
-	editable:true,
-	forceSelection:true,
-	displayField: 'idsunm',
-	valueField: 'idsuno',
-//    allowBlank: false,
-//    afterLabelTextTpl: Ext.required,
-//    blankText:"菜单类型不允许为空",
-	initComponent: function () {
-		var me=this;
-
-		me.store=Ext.create('Ext.data.Store',{
-			fields: ['idsuno', 'idsunm'],
-			autoLoad:me.autoLoad,
-			proxy: {
-			    
-			    type: 'ajax',
-			    url: Ext.ContextPath+'/pubSuno/query4Combo.do',
-			    reader: {
-			        type: 'json'
-			        //rootProperty: '${propertyColumn.property}'
-			    }
-			},
-			listeners:{
-				load:function(myStore){
-					if(myStore.getCount( ) >0){
-			 			var r=myStore.getAt(0);
-			 			me.select( r );
-			 		}
-				}
-			}
-			
-		});
-		me.callParent();
-	}
-});

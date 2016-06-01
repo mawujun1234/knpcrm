@@ -19,7 +19,8 @@ Ext.define("y.customer.Customer",{
 		{name:'qualitylevel',type:'string'},
 		{name:'moneylevel',type:'string'},
 		{name:'payclause',type:'string'},
-		{name:'id',type:'string'}
+		{name:'id',type:'string'},
+		{name:'createDate',type:'date', dateFormat: 'Y-m-d H:i:s'}
 	],
 	proxy:{
 		type:'ajax',

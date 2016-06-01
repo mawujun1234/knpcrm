@@ -45,6 +45,13 @@ public class CodeItemController {
 		return codeItemes;
 	}
 	
+	@RequestMapping("/codeItem/query4Combo.do")
+	@ResponseBody
+	public List<CodeItem> query4Combo(String codeType_id){
+		List<CodeItem> codeItemes=codeItemService.query(Cnd.select().andEquals(M.CodeItem.codeType_id, codeType_id));
+		return codeItemes;
+	}
+	
 
 	@RequestMapping("/codeItem/load.do")
 	@ResponseBody
