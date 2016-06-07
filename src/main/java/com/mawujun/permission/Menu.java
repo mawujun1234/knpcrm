@@ -47,6 +47,8 @@ public class Menu {
 	@FieldDefine(title="父id",hidden=true)
 	@Column(length=36) 
 	private String parent_id;//上级rolegroup的id
+	@FieldDefine(title="排序")//
+	private Integer sort;
 	
 	public MenuType getMenuType() {
 		return menuType;
@@ -114,6 +116,16 @@ public class Menu {
 
 	public String getCode() {
 		return code;
+	}
+
+
+	public Integer getSort() {
+		return sort;
+	}
+
+
+	public void setSort(Integer sort) {
+		this.sort = sort;
 	}
 
 	
